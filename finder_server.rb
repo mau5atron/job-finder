@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'httparty'
 
 get '/'do
-p params[:job]
+# p params[:job]
 # posts security jobs
 url = "https://miami.craigslist.org/search/sof"
 response = HTTParty.get url
