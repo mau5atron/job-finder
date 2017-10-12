@@ -5,7 +5,7 @@ require 'httparty'
 get '/'do
 p params[:job]
 # posts security jobs
-url = "https://miami.craigslist.org/search/#{params[:job]}"
+url = "https://miami.craigslist.org/search/sof"
 response = HTTParty.get url
 
 dom = Nokogiri::HTML(response.body)
